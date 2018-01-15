@@ -1,0 +1,50 @@
+body {
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 40px;
+}
+#sub-container {
+  width: 15%;
+  height: 100%;
+  margin-left: 42.5%;
+}
+
+@keyframes one {
+  0%{left: 0;}
+  50%{left: -25%;}
+  100%{left: 0;}
+}
+@keyframes four {
+  0%{right: 0;}
+  50%{right: -25%;}
+  100%{right: 0;}
+}
+
+.block {
+  width: 25%;
+  height: 100%;
+  border-radius: 10px;
+  float: left;
+}
+.block:nth-child(1) {
+  background: #2196f3;
+  position: relative;
+  animation-name: one;
+  animation-duration: 2s;
+  animation-iteration-count: 100;
+}
+.block:nth-child(2) {
+  background: #f44336;
+}
+.block:nth-child(3) {
+  background: #ff9800;
+}
+.block:nth-child(4) {
+  background: #009688;
+  position: relative;
+  animation-name: four;
+  animation-duration: 2s;
+  animation-iteration-count: 100;
+}
